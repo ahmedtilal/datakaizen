@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "data-kaizen"
+version = "0.1.0"
+description = "Data kaizen digital garden project."
+authors = ["Ahmed Osman <ahmedtilal1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "data_kaizen"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.0.13"
+mkdocs-awesome-pages-plugin = "^2.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

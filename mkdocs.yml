@@ -1,0 +1,49 @@
+site_name: Data Kaizen
+site_description: Ahmed's personal wiki.
+site_author: Ahmed Osman
+
+nav:
+  - Introduction: index.md
+  - Data Engineering: data-engineering/airflow.md
+
+theme:
+  name: material
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: datakaizen
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  font:
+    text: Poppins
+    code: Roboto Mono
+
+  logo: assets/dk-logo.png
+
+  favicon: assets/favicon.ico
+
+  features:
+    - navigation.instant
+    - navigation.expand
+
+extra_css:
+  - css/extra.css
+
+plugins:
+  - search
+  - awesome-pages
+
+repo_name: ahmedtilal/data-kaizen
+repo_url: https://github.com/ahmedtilal/data-kaizen
