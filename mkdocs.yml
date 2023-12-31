@@ -45,5 +45,10 @@ plugins:
   - search
   - awesome-pages
 
+extra:
+  analytics:
+    provider: google
+    property: G-EV7397TD8D
+
 repo_name: ahmedtilal/datakaizen
 repo_url: https://github.com/ahmedtilal/datakaizen
