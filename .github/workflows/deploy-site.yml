@@ -37,7 +37,9 @@ jobs:
         key: ${{ runner.os }}-venv-${{ hashFiles('**/poetry.lock') }}
 
     - name: Build Static Files
-      run: make build
+      run: python -m poetry install
+	    run: python -m poetry run mkdocs build
+
     - name: Setup AWS CLI
       uses: aws-actions/configure-aws-credentials@v1
       with:
