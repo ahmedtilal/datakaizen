@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Data kaizen digital garden project."
 authors = ["Ahmed Osman <ahmedtilal1@gmail.com>"]
 readme = "README.md"
-packages = [{include = "data_kaizen"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
