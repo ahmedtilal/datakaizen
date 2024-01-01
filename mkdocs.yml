@@ -5,6 +5,7 @@ site_author: Ahmed Osman
 nav:
   - Introduction: index.md
   - Data Engineering: data-engineering/airflow.md
+  - Devops: devops/deploying-a-mkdocs-site-on-s3.md
 
 theme:
   name: material
