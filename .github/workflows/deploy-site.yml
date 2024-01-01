@@ -22,8 +22,7 @@ jobs:
       with:
         python-version: "3.10"
     - name: Build Static Files
-      run: |
-        make build
+      run: make build
     - name: Setup AWS CLI
       uses: aws-actions/configure-aws-credentials@v1
       with:
