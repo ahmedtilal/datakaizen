@@ -16,9 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-    - name: Check out repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
@@ -32,21 +30,15 @@ jobs:
         virtualenvs-in-project: true
         installer-parallel: true
 
-    - name: Load cached venv
+    - name: Load cached env and build static files
       id: cached-poetry-dependencies
       uses: actions/cache@v3
       with:
         path: .venv
         key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock')
 
-    - name: Install dependencies
       if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
       run: poetry install --no-interaction --no-root
-
-    - name: Install project
-      run: poetry install --no-interaction
-
-    - name: Build static files
       run: poetry run mkdocs build -f
 
     - name: Setup AWS CLI
