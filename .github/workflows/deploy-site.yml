@@ -47,7 +47,7 @@ jobs:
       run: poetry install --no-interaction
 
     - name: Build static files
-      run: mkdocs build
+      run: poetry run mkdocs build
 
     - name: Setup AWS CLI
       uses: aws-actions/configure-aws-credentials@v1
