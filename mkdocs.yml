@@ -6,7 +6,7 @@ nav:
   - Introduction: index.md
   - Data Engineering: data-engineering/airflow.md
   - Devops: devops/deploying-a-mkdocs-site-on-s3.md
-  - Software Engineering: software-engineering/Building an MVP.md
+  - Software Engineering: software-engineering/Building_an_MVP.md
 
 theme:
   name: material
